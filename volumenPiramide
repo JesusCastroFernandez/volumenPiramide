@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class VolumenPiramide {
+    public static void main(String[] args) {
+        // Crear un objeto Scanner para leer datos desde la entrada estándar
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitar al usuario que ingrese la altura y longitud del lado de la pirámide
+        System.out.print("Ingresa la altura de la pirámide en metros: ");
+        double altura = scanner.nextDouble();
+
+        System.out.print("Ingresa la longitud del lado de la base de la pirámide en metros: ");
+        double lado = scanner.nextDouble();
+
+        // Calcular el volumen de la pirámide
+        double volumen = (lado * lado * altura) / 3;
+
+        // Imprimir el resultado
+        System.out.println("El volumen de la pirámide es de " + volumen + " metros cúbicos.");
+
+        // Calcular cuántas piscinas olímpicas caben en el volumen de la pirámide
+        double piscinasOlimpicas = volumen / 2500;
+
+        // Imprimir el resultado
+        System.out.println("El volumen de la pirámide equivale a " + piscinasOlimpicas + " piscinas olímpicas.");
+    }
+}
